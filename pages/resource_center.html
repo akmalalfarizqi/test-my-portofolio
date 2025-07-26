@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resource Center - AbyyCipherX | Panduan & Tools Cybersecurity</title>
+    <meta name="description" content="Pusat sumber daya lengkap untuk mahasiswa developer - panduan downloadable, tools interaktif, dan materi edukasi cybersecurity dalam bahasa Indonesia." />
+    <meta name="keywords" content="cybersecurity resources, programming guides, security tools, Indonesian digital safety, secure coding practices" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fcyberguard9386back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="font-inter bg-background text-text-primary transition-all duration-300">
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-cyber border-b border-surface">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="w-8 h-8 text-accent mr-3" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-13-5z"/>
+                        <path d="M14 16l-2-2-1.41 1.41L14 18.83l6-6L18.59 11.41 14 16z" fill="#000"/>
+                    </svg>
+                    <span class="text-xl font-bold text-gradient-cyber">AbyyCipherX</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-accent transition-cyber-fast">Beranda</a>
+                    <a href="programming_skills.html" class="text-text-secondary hover:text-accent transition-cyber-fast">Keahlian</a>
+                    <a href="cyber_awareness_hub.html" class="text-text-secondary hover:text-accent transition-cyber-fast">Cyber Awareness</a>
+                    <a href="project_portfolio.html" class="text-text-secondary hover:text-accent transition-cyber-fast">Proyek</a>
+                    <a href="learning_journey_blog.html" class="text-text-secondary hover:text-accent transition-cyber-fast">Blog</a>
+                    <a href="resource_center.html" class="text-accent font-medium border-b-2 border-accent pb-1">Sumber Daya</a>
+                </div>
+
+                <!-- Theme Toggle & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <button id="themeToggle" class="p-2 rounded-lg bg-surface hover:bg-cyber-gray-700 transition-cyber-fast" aria-label="Toggle theme">
+                        <svg id="sunIcon" class="w-5 h-5 text-accent hidden" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                        </svg>
+                        <svg id="moonIcon" class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                        </svg>
+                    </button>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg bg-surface hover:bg-cyber-gray-700 transition-cyber-fast">
+                        <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobileMenu" class="md:hidden hidden bg-surface rounded-lg mt-2 p-4 space-y-3">
+                <a href="homepage.html" class="block text-text-secondary hover:text-accent transition-cyber-fast py-2">Beranda</a>
+                <a href="programming_skills.html" class="block text-text-secondary hover:text-accent transition-cyber-fast py-2">Keahlian</a>
+                <a href="cyber_awareness_hub.html" class="block text-text-secondary hover:text-accent transition-cyber-fast py-2">Cyber Awareness</a>
+                <a href="project_portfolio.html" class="block text-text-secondary hover:text-accent transition-cyber-fast py-2">Proyek</a>
+                <a href="learning_journey_blog.html" class="block text-text-secondary hover:text-accent transition-cyber-fast py-2">Blog</a>
+                <a href="resource_center.html" class="block text-accent font-medium py-2">Sumber Daya</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="space-y-6">
+                <div class="inline-flex items-center px-4 py-2 bg-accent/10 rounded-full text-accent text-sm font-medium">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C20.832 18.477 19.246 18 17.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                    </svg>
+                    2,500+ Resources Downloaded
+                </div>
+                
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+                    <span class="text-gradient-cyber">Resource Center</span><br />
+                    <span class="text-text-primary">Panduan & Tools untuk</span><br />
+                    <span class="text-accent">Security-Conscious Developers</span>
+                </h1>
+                
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Koleksi lengkap panduan downloadable, tools interaktif, dan materi edukasi cybersecurity 
+                    yang dikurasi khusus untuk mahasiswa dan developer muda Indonesia.
+                </p>
+
+                <!-- Search Bar -->
+                <div class="max-w-2xl mx-auto">
+                    <div class="relative">
+                        <input type="text" id="resourceSearch" placeholder="Cari panduan, tools, atau materi..." class="cyber-input w-full pl-12 pr-4 py-4 text-lg" />
+                        <svg class="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mt-12">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-accent">150+</div>
+                        <div class="text-text-secondary text-sm">Panduan</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-success">25+</div>
+                        <div class="text-text-secondary text-sm">Tools</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-warning">50+</div>
+                        <div class="text-text-secondary text-sm">Templates</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-accent">800+</div>
+                        <div class="text-text-secondary text-sm">Pengguna</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Categories -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-surface/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Kategori Sumber Daya</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">
+                    Pilih kategori yang sesuai dengan kebutuhan belajar Anda
+                </p>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="category-tab active px-6 py-3 rounded-lg font-medium transition-cyber-fast" data-category="all">
+                    Semua Kategori
+                </button>
+                <button class="category-tab px-6 py-3 rounded-lg font-medium transition-cyber-fast" data-category="beginner">
+                    Programming Dasar
+                </button>
+                <button class="category-tab px-6 py-3 rounded-lg font-medium transition-cyber-fast" data-category="security">
+                    Cybersecurity
+                </button>
+                <button class="category-tab px-6 py-3 rounded-lg font-medium transition-cyber-fast" data-category="coding">
+                    Secure Coding
+                </button>
+                <button class="category-tab px-6 py-3 rounded-lg font-medium transition-cyber-fast" data-category="tools">
+                    Tools & Utilities
+                </button>
+            </div>
+
+            <!-- Resource Grid -->
+            <div id="resourceGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Beginner Programming Resources -->
+                <div class="cyber-card p-6 resource-item" data-category="beginner">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 bg-success/20 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C20.832 18.477 19.246 18 17.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                        </div>
+                        <span class="px-2 py-1 bg-success/20 text-success text-xs rounded">PDF</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Panduan HTML & CSS Dasar</h3>
+                    <p class="text-text-secondary mb-4">Panduan lengkap untuk memulai web development dengan fokus pada struktur semantic dan accessibility.</p>
+                    <div class="flex items-center justify-between text-sm text-text-secondary mb-4">
+                        <span>Target: Pemula</span>
+                        <span>📥 1,250 downloads</span>
+                    </div>
+                    <div class="flex space-x-3">
+                        <button class="cyber-button-primary flex-1 text-center">Download</button>
+                        <button class="px-4 py-2 border border-accent text-accent hover:bg-accent hover:text-primary transition-cyber-fast rounded">Preview</button>
+                    </div>
+                </div>
+
+                <!-- JavaScript Security Guide -->
+                <div class="cyber-card p-6 resource-item" data-category="security coding">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 bg-warning/20 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <span class="px-2 py-1 bg-warning/20 text-warning text-xs rounded">PDF</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">JavaScript Security Best Practices</h3>
+                    <p class="text-text-secondary mb-4">Cheat sheet untuk mencegah XSS, CSRF, dan vulnerability umum dalam JavaScript development.</p>
+                    <div class="flex items-center justify-between text-sm text-text-secondary mb-4">
+                        <span>Target: Intermediate</span>
+                        <span>📥 890 downloads</span>
+                    </div>
+                    <div class="flex space-x-3">
+                        <button class="cyber-button-primary flex-1 text-center">Download</button>
+                        <button class="px-4 py-2 border border-accent text-accent hover:bg-accent hover:text-primary transition-cyber-fast rounded">Preview</button>
+                    </div>
+                </div>
+
+                <!-- Password Security Guide -->
+                <div class="cyber-card p-6 resource-item" data-category="security">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 bg-error/20 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-error" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                            </svg>
+                        </div>
+                        <span class="px-2 py-1 bg-error/20 text-error text-xs rounded">PDF</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Panduan Keamanan Password</h3>
+                    <p class="text-text-secondary mb-4">Strategi lengkap untuk membuat, menyimpan, dan mengelola password yang aman untuk developer.</p>
+                    <div class="flex items-center justify-between text-sm text-text-secondary mb-4">
+                        <span>Target: Semua Level</span>
+                        <span>📥 2,100 downloads</span>
+                    </div>
+                    <div class="flex space-x-3">
+                        <button class="cyber-button-primary flex-1 text-center">Download</button>
+                        <button class="px-4 py-2 border border-accent text-accent hover:bg-accent hover:text-primary transition-cyber-fast rounded">Preview</button>
+                    </div>
+                </div>
+
+                <!-- Python Security Template -->
+                <div class="cyber-card p-6 resource-item" data-category="coding">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 bg-success/20 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                            </svg>
+                        </div>
+                        <span class="px-2 py-1 bg-success/20 text-success text-xs rounded">Template</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Python Secure Coding Template</h3>
+                    <p class="text-text-secondary mb-4">Template project Python dengan implementasi security best practices dan dokumentasi lengkap.</p>
+                    <div class="flex items-center justify-between text-sm text-text-secondary mb-4">
+                        <span>Target: Intermediate</span>
+                        <span>📥 650 downloads</span>
+                    </div>
+                    <div class="flex space-x-3">
+                        <button class="cyber-button-primary flex-1 text-center">Download</button>
+                        <button class="px-4 py-2 border border-accent text-accent hover:bg-accent hover:text-primary transition-cyber-fast rounded">Preview</button>
+                    </div>
+                </div>
+
+                <!-- Indonesian Digital Safety -->
+                <div class="cyber-card p-6 resource-item" data-category="security">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
+                            </svg>
+                        </div>
+                        <span class="px-2 py-1 bg-accent/20 text-accent text-xs rounded">PDF</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Digital Safety Indonesia 2025</h3>
+                    <p class="text-text-secondary mb-4">Panduan keamanan digital khusus konteks Indonesia dengan statistik terbaru dan case study lokal.</p>
+                    <div class="flex items-center justify-between text-sm text-text-secondary mb-4">
+                        <span>Target: Semua Level</span>
+                        <span>📥 1,800 downloads</span>
+                    </div>
+                    <div class="flex space-x-3">
+                        <button class="cyber-button-primary flex-1 text-center">Download</button>
+                        <button class="px-4 py-2 border border-accent text-accent hover:bg-accent hover:text-primary transition-cyber-fast rounded">Preview</button>
+                    </div>
+                </div>
+
+                <!-- Web Security Checklist -->
+                <div class="cyber-card p-6 resource-item" data-category="coding security">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 bg-warning/20 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                            </svg>
+                        </div>
+                        <span class="px-2 py-1 bg-warning/20 text-warning text-xs rounded">Checklist</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Web Security Deployment Checklist</h3>
+                    <p class="text-text-secondary mb-4">Checklist lengkap untuk memastikan website Anda aman sebelum go-live ke production.</p>
+                    <div class="flex items-center justify-between text-sm text-text-secondary mb-4">
+                        <span>Target: Advanced</span>
+                        <span>📥 720 downloads</span>
+                    </div>
+                    <div class="flex space-x-3">
+                        <button class="cyber-button-primary flex-1 text-center">Download</button>
+                        <button class="px-4 py-2 border border-accent text-accent hover:bg-accent hover:text-primary transition-cyber-fast rounded">Preview</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button class="px-8 py-3 border-2 border-accent text-accent hover:bg-accent hover:text-primary transition-cyber-fast rounded-lg font-semibold">
+                    Muat Lebih Banyak Resources
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Tools Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Tools Interaktif</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">
+                    Koleksi tools web-based untuk membantu Anda belajar dan menerapkan praktik keamanan
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Password Strength Checker -->
+                <div class="cyber-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-success/20 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Password Strength Checker</h3>
+                            <p class="text-text-secondary text-sm">Analisis kekuatan password</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <input type="password" id="passwordInput" placeholder="Masukkan password untuk dianalisis..." class="cyber-input w-full" />
+                        <div id="strengthMeter" class="h-2 bg-surface rounded-full overflow-hidden">
+                            <div id="strengthBar" class="h-full bg-error transition-all duration-300 w-0"></div>
+                        </div>
+                        <div id="strengthText" class="text-sm text-text-secondary">Masukkan password untuk melihat analisis</div>
+                        <div id="suggestions" class="text-sm text-text-secondary space-y-1 hidden">
+                            <p class="font-medium">Saran perbaikan:</p>
+                            <ul id="suggestionList" class="list-disc list-inside space-y-1"></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Headers Analyzer -->
+                <div class="cyber-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-warning/20 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Security Headers Analyzer</h3>
+                            <p class="text-text-secondary text-sm">Analisis header keamanan website</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <input type="url" id="urlInput" placeholder="https://example.com" class="cyber-input w-full" />
+                        <button id="analyzeBtn" class="cyber-button-primary w-full">
+                            Analisis Headers
+                        </button>
+                        <div id="headerResults" class="hidden space-y-2">
+                            <div class="text-sm font-medium">Hasil Analisis:</div>
+                            <div id="headerList" class="space-y-1 text-sm"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Code Vulnerability Scanner -->
+                <div class="cyber-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-error/20 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-error" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Code Vulnerability Scanner</h3>
+                            <p class="text-text-secondary text-sm">Scan kerentanan dasar pada code</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <textarea id="codeInput" placeholder="Paste your code here for basic vulnerability scanning..." class="cyber-input w-full h-32 resize-none font-code text-sm"></textarea>
+                        <button id="scanBtn" class="cyber-button-primary w-full">
+                            Scan Vulnerabilities
+                        </button>
+                        <div id="scanResults" class="hidden space-y-2">
+                            <div class="text-sm font-medium">Hasil Scan:</div>
+                            <div id="vulnerabilityList" class="space-y-1 text-sm"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Contributions -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-surface/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Kontribusi Komunitas</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">
+                    Resources yang dibagikan oleh fellow students dan developer muda Indonesia
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Community Resource 1 -->
+                <div class="cyber-card p-6">
+                    <div class="flex items-start space-x-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sarah Contributor" class="w-12 h-12 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="flex-1">
+                            <h3 class="font-semibold">React Security Components</h3>
+                            <p class="text-text-secondary text-sm">by Sarah Putri</p>
+                        </div>
+                        <span class="px-2 py-1 bg-success/20 text-success text-xs rounded">React</span>
+                    </div>
+                    <p class="text-text-secondary mb-4">Koleksi React components dengan built-in security features untuk form validation dan data handling.</p>
+                    <div class="flex items-center justify-between text-sm text-text-secondary mb-4">
+                        <span>⭐ 4.8/5 (24 reviews)</span>
+                        <span>📥 340 downloads</span>
+                    </div>
+                    <button class="cyber-button-primary w-full">Download & Review</button>
+                </div>
+
+                <!-- Community Resource 2 -->
+                <div class="cyber-card p-6">
+                    <div class="flex items-start space-x-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Andi Contributor" class="w-12 h-12 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg'; this.onerror=null;" />
+                        <div class="flex-1">
+                            <h3 class="font-semibold">API Security Testing Guide</h3>
+                            <p class="text-text-secondary text-sm">by Andi Rahman</p>
+                        </div>
+                        <span class="px-2 py-1 bg-warning/20 text-warning text-xs rounded">API</span>
+                    </div>
+                    <p class="text-text-secondary mb-4">Panduan lengkap untuk testing keamanan API dengan tools gratis dan metodologi yang mudah dipahami.</p>
+                    <div class="flex items-center justify-between text-sm text-text-secondary mb-4">
+                        <span>⭐ 4.9/5 (18 reviews)</span>
+                        <span>📥 280 downloads</span>
+                    </div>
+                    <button class="cyber-button-primary w-full">Download & Review</button>
+                </div>
+
+                <!-- Community Resource 3 -->
+                <div class="cyber-card p-6">
+                    <div class="flex items-start space-x-4 mb-4">
+                        <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Maya Contributor" class="w-12 h-12 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/09/08/04/12/programmer-1653351_1280.png'; this.onerror=null;" />
+                        <div class="flex-1">
+                            <h3 class="font-semibold">Mobile App Security Checklist</h3>
+                            <p class="text-text-secondary text-sm">by Maya Sari</p>
+                        </div>
+                        <span class="px-2 py-1 bg-accent/20 text-accent text-xs rounded">Mobile</span>
+                    </div>
+                    <p class="text-text-secondary mb-4">Checklist keamanan untuk mobile app development dengan fokus pada Android dan iOS security best practices.</p>
+                    <div class="flex items-center justify-between text-sm text-text-secondary mb-4">
+                        <span>⭐ 4.7/5 (31 reviews)</span>
+                        <span>📥 520 downloads</span>
+                    </div>
+                    <button class="cyber-button-primary w-full">Download & Review</button>
+                </div>
+            </div>
+
+            <!-- Contribute Section -->
+            <div class="text-center mt-12">
+                <div class="cyber-card p-8 max-w-2xl mx-auto">
+                    <h3 class="text-2xl font-bold mb-4">Bagikan Resource Anda</h3>
+                    <p class="text-text-secondary mb-6">
+                        Punya panduan, template, atau tool yang berguna? Bagikan dengan komunitas dan bantu fellow developers belajar!
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button class="cyber-button-primary">Submit Resource</button>
+                        <button class="px-6 py-3 border-2 border-accent text-accent hover:bg-accent hover:text-primary transition-cyber-fast rounded-lg font-semibold">
+                            Lihat Guidelines
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="cyber-card p-8">
+                <div class="mb-6">
+                    <svg class="w-16 h-16 text-accent mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
+                    <p class="text-text-secondary max-w-2xl mx-auto">
+                        Dapatkan resource terbaru, security alerts, dan tips coding langsung di inbox Anda. 
+                        Khusus untuk developer Indonesia dengan konten yang relevan dan actionable.
+                    </p>
+                </div>
+
+                <div class="max-w-md mx-auto">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <input type="email" placeholder="email@example.com" class="cyber-input flex-1" />
+                        <button class="cyber-button-primary whitespace-nowrap">
+                            Subscribe
+                        </button>
+                    </div>
+                    <p class="text-xs text-text-secondary mt-3">
+                        Monthly updates • No spam • Unsubscribe anytime
+                    </p>
+                </div>
+
+                <!-- Subscription Benefits -->
+                <div class="grid md:grid-cols-3 gap-6 mt-8">
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-success/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C20.832 18.477 19.246 18 17.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold mb-1">New Resources</h3>
+                        <p class="text-text-secondary text-sm">Resource terbaru setiap bulan</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-warning/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold mb-1">Security Alerts</h3>
+                        <p class="text-text-secondary text-sm">Update keamanan penting</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold mb-1">Quick Tips</h3>
+                        <p class="text-text-secondary text-sm">Tips coding praktis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 sm:px-6 lg:px-8 bg-surface border-t border-cyber-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <svg class="w-8 h-8 text-accent mr-3" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-13-5z"/>
+                            <path d="M14 16l-2-2-1.41 1.41L14 18.83l6-6L18.59 11.41 14 16z" fill="#000"/>
+                        </svg>
+                        <span class="text-xl font-bold text-gradient-cyber">AbyyCipherX</span>
+                    </div>
+                    <p class="text-text-secondary">Building secure web solutions for tomorrow's digital world.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold mb-4">Quick Links</h3>
+                    <div class="space-y-2">
+                        <a href="programming_skills.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Keahlian</a>
+                        <a href="project_portfolio.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Proyek</a>
+                        <a href="learning_journey_blog.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Blog</a>
+                        <a href="resource_center.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Resources</a>
+                    </div>
+                </div>
+
+                <!-- Security -->
+                <div>
+                    <h3 class="font-semibold mb-4">Cybersecurity</h3>
+                    <div class="space-y-2">
+                        <a href="cyber_awareness_hub.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Cyber Awareness</a>
+                        <a href="cyber_awareness_hub.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Security Tips</a>
+                        <a href="cyber_awareness_hub.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Case Studies</a>
+                        <a href="resource_center.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Security Tools</a>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="font-semibold mb-4">Connect</h3>
+                    <div class="space-y-2">
+                        <a href="mailto:contact@abyycipherx.dev" class="block text-text-secondary hover:text-accent transition-cyber-fast">Email</a>
+                        <a href="javascript:void(0)" class="block text-text-secondary hover:text-accent transition-cyber-fast">LinkedIn</a>
+                        <a href="javascript:void(0)" class="block text-text-secondary hover:text-accent transition-cyber-fast">GitHub</a>
+                        <a href="javascript:void(0)" class="block text-text-secondary hover:text-accent transition-cyber-fast">Twitter</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-cyber-gray-800 mt-8 pt-8 text-center">
+                <p class="text-text-secondary">© 2025 AbyyCipherX. All Rights Reserved. Built with security in mind.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const sunIcon = document.getElementById('sunIcon');
+        const moonIcon = document.getElementById('moonIcon');
+        const body = document.body;
+
+        // Check for saved theme preference or default to dark
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        
+        if (currentTheme === 'light') {
+            body.classList.add('light');
+            sunIcon.classList.remove('hidden');
+            moonIcon.classList.add('hidden');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light');
+            
+            if (body.classList.contains('light')) {
+                localStorage.setItem('theme', 'light');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+            } else {
+                localStorage.setItem('theme', 'dark');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Category Filter Functionality
+        const categoryTabs = document.querySelectorAll('.category-tab');
+        const resourceItems = document.querySelectorAll('.resource-item');
+
+        categoryTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                categoryTabs.forEach(t => {
+                    t.classList.remove('active', 'bg-accent', 'text-primary');
+                    t.classList.add('text-text-secondary', 'hover:text-accent');
+                });
+                
+                // Add active class to clicked tab
+                tab.classList.add('active', 'bg-accent', 'text-primary');
+                tab.classList.remove('text-text-secondary', 'hover:text-accent');
+                
+                const category = tab.dataset.category;
+                
+                // Filter resources
+                resourceItems.forEach(item => {
+                    if (category === 'all' || item.dataset.category.includes(category)) {
+                        item.style.display = 'block';
+                        item.classList.add('animate-fade-in');
+                    } else {
+                        item.style.display = 'none';
+                        item.classList.remove('animate-fade-in');
+                    }
+                });
+            });
+        });
+
+        // Initialize first tab as active
+        categoryTabs[0].classList.add('active', 'bg-accent', 'text-primary');
+        categoryTabs[0].classList.remove('text-text-secondary', 'hover:text-accent');
+
+        // Search Functionality
+        const searchInput = document.getElementById('resourceSearch');
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            
+            resourceItems.forEach(item => {
+                const title = item.querySelector('h3').textContent.toLowerCase();
+                const description = item.querySelector('p').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+        // Password Strength Checker
+        const passwordInput = document.getElementById('passwordInput');
+        const strengthBar = document.getElementById('strengthBar');
+        const strengthText = document.getElementById('strengthText');
+        const suggestions = document.getElementById('suggestions');
+        const suggestionList = document.getElementById('suggestionList');
+
+        passwordInput.addEventListener('input', (e) => {
+            const password = e.target.value;
+            const result = checkPasswordStrength(password);
+            
+            // Update strength bar
+            strengthBar.style.width = `${result.score * 25}%`;
+            strengthBar.className = `h-full transition-all duration-300 ${result.colorClass}`;
+            
+            // Update strength text
+            strengthText.textContent = result.text;
+            strengthText.className = `text-sm ${result.textColorClass}`;
+            
+            // Show/hide suggestions
+            if (result.suggestions.length > 0) {
+                suggestions.classList.remove('hidden');
+                suggestionList.innerHTML = result.suggestions.map(s => `<li>${s}</li>`).join('');
+            } else {
+                suggestions.classList.add('hidden');
+            }
+        });
+
+        function checkPasswordStrength(password) {
+            let score = 0;
+            const suggestions = [];
+            
+            if (password.length < 8) {
+                suggestions.push('Gunakan minimal 8 karakter');
+            } else {
+                score++;
+            }
+            
+            if (!/[a-z]/.test(password)) {
+                suggestions.push('Tambahkan huruf kecil');
+            } else {
+                score++;
+            }
+            
+            if (!/[A-Z]/.test(password)) {
+                suggestions.push('Tambahkan huruf besar');
+            } else {
+                score++;
+            }
+            
+            if (!/[0-9]/.test(password)) {
+                suggestions.push('Tambahkan angka');
+            } else {
+                score++;
+            }
+            
+            if (!/[^A-Za-z0-9]/.test(password)) {
+                suggestions.push('Tambahkan karakter khusus (!@#$%^&*)');
+            } else {
+                score++;
+            }
+            
+            const strengthLevels = [
+                { text: 'Sangat Lemah', colorClass: 'bg-error', textColorClass: 'text-error' },
+                { text: 'Lemah', colorClass: 'bg-error', textColorClass: 'text-error' },
+                { text: 'Sedang', colorClass: 'bg-warning', textColorClass: 'text-warning' },
+                { text: 'Kuat', colorClass: 'bg-success', textColorClass: 'text-success' },
+                { text: 'Sangat Kuat', colorClass: 'bg-accent', textColorClass: 'text-accent' }
+            ];
+            
+            return {
+                score: Math.min(score, 4),
+                ...strengthLevels[Math.min(score, 4)],
+                suggestions
+            };
+        }
+
+        // Security Headers Analyzer
+        const urlInput = document.getElementById('urlInput');
+        const analyzeBtn = document.getElementById('analyzeBtn');
+        const headerResults = document.getElementById('headerResults');
+        const headerList = document.getElementById('headerList');
+
+        analyzeBtn.addEventListener('click', () => {
+            const url = urlInput.value;
+            if (!url) return;
+            
+            // Simulate header analysis (in real app, this would make an API call)
+            analyzeBtn.textContent = 'Analyzing...';
+            analyzeBtn.disabled = true;
+            
+            setTimeout(() => {
+                const mockHeaders = [
+                    { name: 'Content-Security-Policy', status: 'missing', severity: 'high' },
+                    { name: 'X-Frame-Options', status: 'present', severity: 'good' },
+                    { name: 'X-Content-Type-Options', status: 'present', severity: 'good' },
+                    { name: 'Strict-Transport-Security', status: 'missing', severity: 'medium' },
+                    { name: 'X-XSS-Protection', status: 'present', severity: 'good' }
+                ];
+                
+                headerList.innerHTML = mockHeaders.map(header => {
+                    const statusClass = header.severity === 'good' ? 'text-success' : 
+                                      header.severity === 'medium' ? 'text-warning' : 'text-error';
+                    const statusIcon = header.status === 'present' ? '✅' : '❌';
+                    
+                    return `<div class="flex justify-between items-center">
+                        <span>${header.name}</span>
+                        <span class="${statusClass}">${statusIcon} ${header.status}</span>
+                    </div>`;
+                }).join('');
+                
+                headerResults.classList.remove('hidden');
+                analyzeBtn.textContent = 'Analisis Headers';
+                analyzeBtn.disabled = false;
+            }, 2000);
+        });
+
+        // Code Vulnerability Scanner
+        const codeInput = document.getElementById('codeInput');
+        const scanBtn = document.getElementById('scanBtn');
+        const scanResults = document.getElementById('scanResults');
+        const vulnerabilityList = document.getElementById('vulnerabilityList');
+
+        scanBtn.addEventListener('click', () => {
+            const code = codeInput.value;
+            if (!code) return;
+            
+            scanBtn.textContent = 'Scanning...';
+            scanBtn.disabled = true;
+            
+            setTimeout(() => {
+                const vulnerabilities = scanCode(code);
+                
+                if (vulnerabilities.length > 0) {
+                    vulnerabilityList.innerHTML = vulnerabilities.map(vuln => 
+                        `<div class="flex items-start space-x-2">
+                            <span class="text-${vuln.severity} text-xs mt-1">●</span>
+                            <div>
+                                <div class="font-medium text-${vuln.severity}">${vuln.type}</div>
+                                <div class="text-xs text-text-secondary">${vuln.description}</div>
+                            </div>
+                        </div>`
+                    ).join('');
+                } else {
+                    vulnerabilityList.innerHTML = '<div class="text-success">✅ No obvious vulnerabilities detected</div>';
+                }
+                
+                scanResults.classList.remove('hidden');
+                scanBtn.textContent = 'Scan Vulnerabilities';
+                scanBtn.disabled = false;
+            }, 1500);
+        });
+
+        function scanCode(code) {
+            const vulnerabilities = [];
+            
+            // Basic vulnerability patterns
+            if (code.includes('eval(')) {
+                vulnerabilities.push({
+                    type: 'Code Injection Risk',
+                    severity: 'error',
+                    description: 'Usage of eval() can lead to code injection attacks'
+                });
+            }
+            
+            if (code.includes('innerHTML') && !code.includes('sanitize')) {
+                vulnerabilities.push({
+                    type: 'XSS Risk',
+                    severity: 'warning',
+                    description: 'innerHTML usage without sanitization may lead to XSS'
+                });
+            }
+            
+            if (code.includes('document.write')) {
+                vulnerabilities.push({
+                    type: 'XSS Risk',
+                    severity: 'error',
+                    description: 'document.write can be exploited for XSS attacks'
+                });
+            }
+            
+            if (code.includes('SELECT * FROM') && !code.includes('prepared')) {
+                vulnerabilities.push({
+                    type: 'SQL Injection Risk',
+                    severity: 'error',
+                    description: 'Direct SQL queries may be vulnerable to injection'
+                });
+            }
+            
+            return vulnerabilities;
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-cyber');
+            } else {
+                header.classList.remove('shadow-cyber');
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

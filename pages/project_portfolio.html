@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Portfolio - AbyyCipherX | Showcase Proyek & Eksperimen Coding</title>
+    <meta name="description" content="Portfolio proyek coding AbyyCipherX dengan fokus keamanan siber. Lihat demo langsung, repository GitHub, dan studi kasus pengembangan yang aman." />
+    <meta name="keywords" content="portfolio, proyek coding, cybersecurity, web development, JavaScript, Python, HTML CSS, secure coding" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fcyberguard9386back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="font-inter bg-background text-text-primary transition-all duration-300">
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-cyber border-b border-surface">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="w-8 h-8 text-accent mr-3" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-13-5z"/>
+                        <path d="M14 16l-2-2-1.41 1.41L14 18.83l6-6L18.59 11.41 14 16z" fill="#000"/>
+                    </svg>
+                    <span class="text-xl font-bold text-gradient-cyber">AbyyCipherX</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-accent transition-cyber-fast">Beranda</a>
+                    <a href="programming_skills.html" class="text-text-secondary hover:text-accent transition-cyber-fast">Keahlian</a>
+                    <a href="cyber_awareness_hub.html" class="text-text-secondary hover:text-accent transition-cyber-fast">Cyber Awareness</a>
+                    <a href="project_portfolio.html" class="text-accent font-medium border-b-2 border-accent pb-1">Proyek</a>
+                    <a href="learning_journey_blog.html" class="text-text-secondary hover:text-accent transition-cyber-fast">Blog</a>
+                    <a href="resource_center.html" class="text-text-secondary hover:text-accent transition-cyber-fast">Sumber Daya</a>
+                </div>
+
+                <!-- Theme Toggle & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <button id="themeToggle" class="p-2 rounded-lg bg-surface hover:bg-cyber-gray-700 transition-cyber-fast" aria-label="Toggle theme">
+                        <svg id="sunIcon" class="w-5 h-5 text-accent hidden" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                        </svg>
+                        <svg id="moonIcon" class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                        </svg>
+                    </button>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg bg-surface hover:bg-cyber-gray-700 transition-cyber-fast">
+                        <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobileMenu" class="md:hidden hidden bg-surface rounded-lg mt-2 p-4 space-y-3">
+                <a href="homepage.html" class="block text-text-secondary hover:text-accent transition-cyber-fast py-2">Beranda</a>
+                <a href="programming_skills.html" class="block text-text-secondary hover:text-accent transition-cyber-fast py-2">Keahlian</a>
+                <a href="cyber_awareness_hub.html" class="block text-text-secondary hover:text-accent transition-cyber-fast py-2">Cyber Awareness</a>
+                <a href="project_portfolio.html" class="block text-accent font-medium py-2">Proyek</a>
+                <a href="learning_journey_blog.html" class="block text-text-secondary hover:text-accent transition-cyber-fast py-2">Blog</a>
+                <a href="resource_center.html" class="block text-text-secondary hover:text-accent transition-cyber-fast py-2">Sumber Daya</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="space-y-6">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+                    <span class="text-gradient-cyber">Project Portfolio</span><br />
+                    <span class="text-text-primary">Secure Coding in Action</span>
+                </h1>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Koleksi proyek coding yang mendemonstrasikan kemampuan praktis dengan fokus pada praktik pengembangan yang aman. 
+                    Setiap proyek menampilkan pertimbangan keamanan dan pembelajaran yang diperoleh.
+                </p>
+                
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap justify-center gap-4 mt-8">
+                    <button class="filter-btn active" data-filter="all">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                        </svg>
+                        Semua Proyek
+                    </button>
+                    <button class="filter-btn" data-filter="web">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9m0 9c-5 0-9-4-9-9s4-9 9-9"/>
+                        </svg>
+                        Web Development
+                    </button>
+                    <button class="filter-btn" data-filter="security">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                        Security Tools
+                    </button>
+                    <button class="filter-btn" data-filter="python">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/>
+                        </svg>
+                        Python Projects
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-8" id="projectsGrid">
+                
+                <!-- Project 1: Secure Login System -->
+                <div class="project-card cyber-card overflow-hidden" data-category="web security">
+                    <div class="aspect-video bg-surface overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Secure Login System Interface" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="px-2 py-1 bg-success/20 text-success text-xs rounded-full font-medium">Completed</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-semibold">Secure Login System</h3>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-sm text-text-secondary">4.8/5</span>
+                            </div>
+                        </div>
+                        
+                        <p class="text-text-secondary mb-4">
+                            Sistem autentikasi lengkap dengan implementasi 2FA, password hashing yang aman, dan session management. 
+                            Menggunakan bcrypt untuk hashing dan JWT untuk token management.
+                        </p>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-warning/20 text-warning text-xs rounded">JavaScript</span>
+                            <span class="px-2 py-1 bg-success/20 text-success text-xs rounded">Node.js</span>
+                            <span class="px-2 py-1 bg-accent/20 text-accent text-xs rounded">Express</span>
+                            <span class="px-2 py-1 bg-error/20 text-error text-xs rounded">Security</span>
+                        </div>
+                        
+                        <!-- Security Features -->
+                        <div class="mb-4">
+                            <h4 class="text-sm font-semibold text-accent mb-2">🔒 Fitur Keamanan:</h4>
+                            <ul class="text-sm text-text-secondary space-y-1">
+                                <li>• Bcrypt password hashing</li>
+                                <li>• Two-Factor Authentication (2FA)</li>
+                                <li>• Rate limiting untuk brute force protection</li>
+                                <li>• Secure session management</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Learning Outcomes -->
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-success mb-2">📚 Pembelajaran:</h4>
+                            <p class="text-sm text-text-secondary">
+                                Memahami pentingnya secure authentication, implementasi middleware security, 
+                                dan best practices untuk session management.
+                            </p>
+                        </div>
+                        
+                        <!-- Action Buttons -->
+                        <div class="flex space-x-3">
+                            <a href="javascript:void(0)" class="flex-1 cyber-button-primary text-center text-sm py-2">
+                                Live Demo
+                            </a>
+                            <a href="javascript:void(0)" class="flex-1 px-3 py-2 border border-accent text-accent hover:bg-accent hover:text-primary transition-cyber-fast rounded text-center text-sm">
+                                GitHub
+                            </a>
+                            <button class="px-3 py-2 bg-surface hover:bg-cyber-gray-700 transition-cyber-fast rounded" onclick="toggleDetails(this)">
+                                <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <!-- Expandable Details -->
+                        <div class="project-details hidden mt-4 pt-4 border-t border-cyber-gray-800">
+                            <div class="space-y-4">
+                                <div>
+                                    <h5 class="font-semibold text-accent mb-2">Tantangan yang Dihadapi:</h5>
+                                    <p class="text-sm text-text-secondary">
+                                        Implementasi 2FA yang user-friendly sambil mempertahankan tingkat keamanan yang tinggi. 
+                                        Mengatasi session hijacking dan CSRF attacks.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-warning mb-2">Solusi yang Diterapkan:</h5>
+                                    <p class="text-sm text-text-secondary">
+                                        Menggunakan TOTP untuk 2FA, implementasi CSRF tokens, dan secure cookie configuration 
+                                        dengan httpOnly dan secure flags.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-success mb-2">Hasil & Dampak:</h5>
+                                    <p class="text-sm text-text-secondary">
+                                        Sistem berhasil menahan 99.9% serangan brute force dan mendapat feedback positif 
+                                        dari 50+ pengguna beta testing.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Vulnerability Scanner -->
+                <div class="project-card cyber-card overflow-hidden" data-category="security python">
+                    <div class="aspect-video bg-surface overflow-hidden relative">
+                        <img src="https://images.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg" alt="Vulnerability Scanner Dashboard" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="px-2 py-1 bg-success/20 text-success text-xs rounded-full font-medium">Completed</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-semibold">Web Vulnerability Scanner</h3>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-sm text-text-secondary">4.6/5</span>
+                            </div>
+                        </div>
+                        
+                        <p class="text-text-secondary mb-4">
+                            Tool otomatis untuk scanning kerentanan dasar pada website. Dapat mendeteksi XSS, SQL injection, 
+                            dan misconfiguration umum dengan reporting yang detail.
+                        </p>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-success/20 text-success text-xs rounded">Python</span>
+                            <span class="px-2 py-1 bg-accent/20 text-accent text-xs rounded">Requests</span>
+                            <span class="px-2 py-1 bg-warning/20 text-warning text-xs rounded">BeautifulSoup</span>
+                            <span class="px-2 py-1 bg-error/20 text-error text-xs rounded">Security</span>
+                        </div>
+                        
+                        <!-- Security Features -->
+                        <div class="mb-4">
+                            <h4 class="text-sm font-semibold text-accent mb-2">🔍 Deteksi Kerentanan:</h4>
+                            <ul class="text-sm text-text-secondary space-y-1">
+                                <li>• Cross-Site Scripting (XSS)</li>
+                                <li>• SQL Injection vulnerabilities</li>
+                                <li>• Directory traversal attacks</li>
+                                <li>• Insecure HTTP headers</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Learning Outcomes -->
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-success mb-2">📚 Pembelajaran:</h4>
+                            <p class="text-sm text-text-secondary">
+                                Memahami common web vulnerabilities, teknik ethical hacking, 
+                                dan pentingnya automated security testing.
+                            </p>
+                        </div>
+                        
+                        <!-- Action Buttons -->
+                        <div class="flex space-x-3">
+                            <a href="javascript:void(0)" class="flex-1 cyber-button-primary text-center text-sm py-2">
+                                Live Demo
+                            </a>
+                            <a href="javascript:void(0)" class="flex-1 px-3 py-2 border border-accent text-accent hover:bg-accent hover:text-primary transition-cyber-fast rounded text-center text-sm">
+                                GitHub
+                            </a>
+                            <button class="px-3 py-2 bg-surface hover:bg-cyber-gray-700 transition-cyber-fast rounded" onclick="toggleDetails(this)">
+                                <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <!-- Expandable Details -->
+                        <div class="project-details hidden mt-4 pt-4 border-t border-cyber-gray-800">
+                            <div class="space-y-4">
+                                <div>
+                                    <h5 class="font-semibold text-accent mb-2">Metodologi Scanning:</h5>
+                                    <p class="text-sm text-text-secondary">
+                                        Menggunakan pendekatan passive dan active scanning dengan rate limiting 
+                                        untuk menghindari DoS pada target website.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-warning mb-2">Ethical Considerations:</h5>
+                                    <p class="text-sm text-text-secondary">
+                                        Tool ini hanya untuk educational purposes dan testing pada website sendiri. 
+                                        Dilengkapi dengan disclaimer dan usage guidelines.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-success mb-2">Statistik Performa:</h5>
+                                    <p class="text-sm text-text-secondary">
+                                        Berhasil mendeteksi 95% vulnerabilities dalam controlled environment testing 
+                                        dengan false positive rate di bawah 5%.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Password Generator -->
+                <div class="project-card cyber-card overflow-hidden" data-category="web security">
+                    <div class="aspect-video bg-surface overflow-hidden relative">
+                        <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Password Generator Interface" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/09/08/04/12/programmer-1653351_1280.png'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="px-2 py-1 bg-success/20 text-success text-xs rounded-full font-medium">Completed</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-semibold">Secure Password Generator</h3>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-sm text-text-secondary">4.9/5</span>
+                            </div>
+                        </div>
+                        
+                        <p class="text-text-secondary mb-4">
+                            Generator password yang aman dengan berbagai opsi kustomisasi. Menggunakan cryptographically secure 
+                            random number generator dan real-time strength analysis.
+                        </p>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-warning/20 text-warning text-xs rounded">JavaScript</span>
+                            <span class="px-2 py-1 bg-accent/20 text-accent text-xs rounded">Web Crypto API</span>
+                            <span class="px-2 py-1 bg-success/20 text-success text-xs rounded">HTML5</span>
+                            <span class="px-2 py-1 bg-error/20 text-error text-xs rounded">Cryptography</span>
+                        </div>
+                        
+                        <!-- Security Features -->
+                        <div class="mb-4">
+                            <h4 class="text-sm font-semibold text-accent mb-2">🔐 Fitur Keamanan:</h4>
+                            <ul class="text-sm text-text-secondary space-y-1">
+                                <li>• Cryptographically secure randomness</li>
+                                <li>• Real-time password strength meter</li>
+                                <li>• Customizable character sets</li>
+                                <li>• No server-side storage</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Learning Outcomes -->
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-success mb-2">📚 Pembelajaran:</h4>
+                            <p class="text-sm text-text-secondary">
+                                Memahami cryptographic principles, entropy calculation, 
+                                dan importance of secure random number generation.
+                            </p>
+                        </div>
+                        
+                        <!-- Action Buttons -->
+                        <div class="flex space-x-3">
+                            <a href="javascript:void(0)" class="flex-1 cyber-button-primary text-center text-sm py-2">
+                                Live Demo
+                            </a>
+                            <a href="javascript:void(0)" class="flex-1 px-3 py-2 border border-accent text-accent hover:bg-accent hover:text-primary transition-cyber-fast rounded text-center text-sm">
+                                GitHub
+                            </a>
+                            <button class="px-3 py-2 bg-surface hover:bg-cyber-gray-700 transition-cyber-fast rounded" onclick="toggleDetails(this)">
+                                <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <!-- Expandable Details -->
+                        <div class="project-details hidden mt-4 pt-4 border-t border-cyber-gray-800">
+                            <div class="space-y-4">
+                                <div>
+                                    <h5 class="font-semibold text-accent mb-2">Algoritma Strength Calculation:</h5>
+                                    <p class="text-sm text-text-secondary">
+                                        Menggunakan Shannon entropy dan NIST guidelines untuk menghitung password strength 
+                                        dengan mempertimbangkan character set diversity dan length.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-warning mb-2">Privacy & Security:</h5>
+                                    <p class="text-sm text-text-secondary">
+                                        Semua operasi dilakukan client-side, tidak ada data yang dikirim ke server. 
+                                        Menggunakan Web Crypto API untuk secure randomness.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-success mb-2">User Adoption:</h5>
+                                    <p class="text-sm text-text-secondary">
+                                        Digunakan oleh 200+ mahasiswa untuk generate secure passwords, 
+                                        dengan 98% user satisfaction rate.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Network Monitor -->
+                <div class="project-card cyber-card overflow-hidden" data-category="security python">
+                    <div class="aspect-video bg-surface overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Network Monitor Dashboard" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="px-2 py-1 bg-warning/20 text-warning text-xs rounded-full font-medium">In Progress</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-semibold">Network Traffic Monitor</h3>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-sm text-text-secondary">4.3/5</span>
+                            </div>
+                        </div>
+                        
+                        <p class="text-text-secondary mb-4">
+                            Tool monitoring traffic jaringan real-time dengan deteksi anomali dan alerting system. 
+                            Dapat mengidentifikasi suspicious activities dan potential intrusions.
+                        </p>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-success/20 text-success text-xs rounded">Python</span>
+                            <span class="px-2 py-1 bg-accent/20 text-accent text-xs rounded">Scapy</span>
+                            <span class="px-2 py-1 bg-warning/20 text-warning text-xs rounded">Matplotlib</span>
+                            <span class="px-2 py-1 bg-error/20 text-error text-xs rounded">Network Security</span>
+                        </div>
+                        
+                        <!-- Security Features -->
+                        <div class="mb-4">
+                            <h4 class="text-sm font-semibold text-accent mb-2">🌐 Monitoring Features:</h4>
+                            <ul class="text-sm text-text-secondary space-y-1">
+                                <li>• Real-time packet analysis</li>
+                                <li>• Anomaly detection algorithms</li>
+                                <li>• Bandwidth usage tracking</li>
+                                <li>• Suspicious activity alerts</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Learning Outcomes -->
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-success mb-2">📚 Pembelajaran:</h4>
+                            <p class="text-sm text-text-secondary">
+                                Memahami network protocols, packet analysis techniques, 
+                                dan implementation of intrusion detection systems.
+                            </p>
+                        </div>
+                        
+                        <!-- Action Buttons -->
+                        <div class="flex space-x-3">
+                            <a href="javascript:void(0)" class="flex-1 cyber-button-primary text-center text-sm py-2">
+                                Preview
+                            </a>
+                            <a href="javascript:void(0)" class="flex-1 px-3 py-2 border border-accent text-accent hover:bg-accent hover:text-primary transition-cyber-fast rounded text-center text-sm">
+                                GitHub
+                            </a>
+                            <button class="px-3 py-2 bg-surface hover:bg-cyber-gray-700 transition-cyber-fast rounded" onclick="toggleDetails(this)">
+                                <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <!-- Expandable Details -->
+                        <div class="project-details hidden mt-4 pt-4 border-t border-cyber-gray-800">
+                            <div class="space-y-4">
+                                <div>
+                                    <h5 class="font-semibold text-accent mb-2">Current Progress (75%):</h5>
+                                    <div class="w-full bg-cyber-gray-800 rounded-full h-2 mb-2">
+                                        <div class="bg-accent h-2 rounded-full" style="width: 75%"></div>
+                                    </div>
+                                    <p class="text-sm text-text-secondary">
+                                        Packet capture dan basic analysis sudah selesai. Sedang mengembangkan 
+                                        machine learning model untuk anomaly detection.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-warning mb-2">Challenges:</h5>
+                                    <p class="text-sm text-text-secondary">
+                                        Optimizing performance untuk high-volume traffic analysis dan 
+                                        reducing false positive rate dalam anomaly detection.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-success mb-2">Next Steps:</h5>
+                                    <p class="text-sm text-text-secondary">
+                                        Implementasi web dashboard untuk visualization dan integration 
+                                        dengan popular SIEM tools.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Secure Chat App -->
+                <div class="project-card cyber-card overflow-hidden" data-category="web security">
+                    <div class="aspect-video bg-surface overflow-hidden relative">
+                        <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Secure Chat Application" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=2939&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="px-2 py-1 bg-success/20 text-success text-xs rounded-full font-medium">Completed</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-semibold">Encrypted Chat Application</h3>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-sm text-text-secondary">4.7/5</span>
+                            </div>
+                        </div>
+                        
+                        <p class="text-text-secondary mb-4">
+                            Aplikasi chat real-time dengan end-to-end encryption menggunakan WebRTC dan Socket.io. 
+                            Implementasi perfect forward secrecy dan message authentication.
+                        </p>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-warning/20 text-warning text-xs rounded">JavaScript</span>
+                            <span class="px-2 py-1 bg-success/20 text-success text-xs rounded">Socket.io</span>
+                            <span class="px-2 py-1 bg-accent/20 text-accent text-xs rounded">WebRTC</span>
+                            <span class="px-2 py-1 bg-error/20 text-error text-xs rounded">Encryption</span>
+                        </div>
+                        
+                        <!-- Security Features -->
+                        <div class="mb-4">
+                            <h4 class="text-sm font-semibold text-accent mb-2">🔐 Encryption Features:</h4>
+                            <ul class="text-sm text-text-secondary space-y-1">
+                                <li>• End-to-end encryption (E2EE)</li>
+                                <li>• Perfect forward secrecy</li>
+                                <li>• Message authentication codes</li>
+                                <li>• Secure key exchange protocol</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Learning Outcomes -->
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-success mb-2">📚 Pembelajaran:</h4>
+                            <p class="text-sm text-text-secondary">
+                                Memahami cryptographic protocols, real-time communication security, 
+                                dan implementation of secure messaging systems.
+                            </p>
+                        </div>
+                        
+                        <!-- Action Buttons -->
+                        <div class="flex space-x-3">
+                            <a href="javascript:void(0)" class="flex-1 cyber-button-primary text-center text-sm py-2">
+                                Live Demo
+                            </a>
+                            <a href="javascript:void(0)" class="flex-1 px-3 py-2 border border-accent text-accent hover:bg-accent hover:text-primary transition-cyber-fast rounded text-center text-sm">
+                                GitHub
+                            </a>
+                            <button class="px-3 py-2 bg-surface hover:bg-cyber-gray-700 transition-cyber-fast rounded" onclick="toggleDetails(this)">
+                                <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <!-- Expandable Details -->
+                        <div class="project-details hidden mt-4 pt-4 border-t border-cyber-gray-800">
+                            <div class="space-y-4">
+                                <div>
+                                    <h5 class="font-semibold text-accent mb-2">Encryption Implementation:</h5>
+                                    <p class="text-sm text-text-secondary">
+                                        Menggunakan Signal Protocol untuk E2EE dengan Double Ratchet algorithm 
+                                        dan X3DH key agreement protocol.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-warning mb-2">Performance Optimization:</h5>
+                                    <p class="text-sm text-text-secondary">
+                                        Optimized untuk handle 100+ concurrent users dengan latency di bawah 50ms 
+                                        tanpa mengorbankan security features.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-success mb-2">Security Audit:</h5>
+                                    <p class="text-sm text-text-secondary">
+                                        Telah melalui peer review dan penetration testing oleh senior students, 
+                                        dengan zero critical vulnerabilities found.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Phishing Detector -->
+                <div class="project-card cyber-card overflow-hidden" data-category="security python">
+                    <div class="aspect-video bg-surface overflow-hidden relative">
+                        <img src="https://images.pixabay.com/photo/2016/09/08/04/12/programmer-1653351_1280.png" alt="Phishing Detection Tool" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="px-2 py-1 bg-error/20 text-error text-xs rounded-full font-medium">Planning</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-semibold">AI Phishing Detector</h3>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-sm text-text-secondary">TBD</span>
+                            </div>
+                        </div>
+                        
+                        <p class="text-text-secondary mb-4">
+                            Machine learning model untuk mendeteksi website phishing berdasarkan URL analysis, 
+                            content analysis, dan behavioral patterns. Target accuracy 95%+.
+                        </p>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-success/20 text-success text-xs rounded">Python</span>
+                            <span class="px-2 py-1 bg-accent/20 text-accent text-xs rounded">Scikit-learn</span>
+                            <span class="px-2 py-1 bg-warning/20 text-warning text-xs rounded">TensorFlow</span>
+                            <span class="px-2 py-1 bg-error/20 text-error text-xs rounded">ML Security</span>
+                        </div>
+                        
+                        <!-- Planned Features -->
+                        <div class="mb-4">
+                            <h4 class="text-sm font-semibold text-accent mb-2">🤖 Planned Features:</h4>
+                            <ul class="text-sm text-text-secondary space-y-1">
+                                <li>• URL structure analysis</li>
+                                <li>• Content similarity detection</li>
+                                <li>• Domain reputation checking</li>
+                                <li>• Real-time browser extension</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Learning Goals -->
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-success mb-2">📚 Learning Goals:</h4>
+                            <p class="text-sm text-text-secondary">
+                                Menguasai machine learning untuk cybersecurity, feature engineering, 
+                                dan deployment of ML models in production.
+                            </p>
+                        </div>
+                        
+                        <!-- Action Buttons -->
+                        <div class="flex space-x-3">
+                            <a href="javascript:void(0)" class="flex-1 bg-cyber-gray-700 text-text-secondary text-center text-sm py-2 rounded cursor-not-allowed">
+                                Coming Soon
+                            </a>
+                            <a href="javascript:void(0)" class="flex-1 px-3 py-2 border border-cyber-gray-700 text-text-secondary rounded text-center text-sm cursor-not-allowed">
+                                GitHub
+                            </a>
+                            <button class="px-3 py-2 bg-surface hover:bg-cyber-gray-700 transition-cyber-fast rounded" onclick="toggleDetails(this)">
+                                <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <!-- Expandable Details -->
+                        <div class="project-details hidden mt-4 pt-4 border-t border-cyber-gray-800">
+                            <div class="space-y-4">
+                                <div>
+                                    <h5 class="font-semibold text-accent mb-2">Research Phase:</h5>
+                                    <p class="text-sm text-text-secondary">
+                                        Sedang mengumpulkan dataset phishing URLs dan legitimate websites 
+                                        untuk training model. Target 50,000+ samples.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-warning mb-2">Technical Approach:</h5>
+                                    <p class="text-sm text-text-secondary">
+                                        Kombinasi traditional ML (Random Forest) dan deep learning (LSTM) 
+                                        untuk URL analysis dan content classification.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-success mb-2">Expected Timeline:</h5>
+                                    <p class="text-sm text-text-secondary">
+                                        Research & data collection (2 bulan), model development (3 bulan), 
+                                        testing & deployment (1 bulan).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Quality Showcase -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-surface/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Code Quality & Best Practices</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">
+                    Contoh evolusi kode dari versi awal hingga implementasi dengan security best practices
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Before Code -->
+                <div class="space-y-4">
+                    <h3 class="text-xl font-semibold text-error">❌ Before: Vulnerable Code</h3>
+                    <div class="code-block">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-sm text-text-secondary font-code">login.js (vulnerable)</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-3 rounded-full bg-error"></div>
+                                <div class="w-3 h-3 rounded-full bg-warning"></div>
+                                <div class="w-3 h-3 rounded-full bg-cyber-gray-700"></div>
+                            </div>
+                        </div>
+                        <div class="font-code text-sm space-y-1">
+                            <div class="text-text-secondary">// Vulnerable login implementation</div>
+                            <div class="text-warning">function</div> <div class="text-accent">login</div><div class="text-text-primary">(username, password) {</div>
+                            <div class="ml-4 text-text-primary">const query = `SELECT * FROM users</div>
+                            <div class="ml-4 text-text-primary">WHERE username='${username}'</div>
+                            <div class="ml-4 text-text-primary">AND password='${password}'`;</div>
+                            <div class="ml-4 text-error">// SQL Injection vulnerable!</div>
+                            <div class="ml-4 text-text-primary">return db.query(query);</div>
+                            <div class="text-text-primary">}</div>
+                        </div>
+                    </div>
+                    <div class="bg-error/10 border border-error/20 rounded-lg p-4">
+                        <h4 class="font-semibold text-error mb-2">🚨 Security Issues:</h4>
+                        <ul class="text-sm text-text-secondary space-y-1">
+                            <li>• SQL Injection vulnerability</li>
+                            <li>• Plain text password storage</li>
+                            <li>• No input validation</li>
+                            <li>• No rate limiting</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- After Code -->
+                <div class="space-y-4">
+                    <h3 class="text-xl font-semibold text-success">✅ After: Secure Implementation</h3>
+                    <div class="code-block">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-sm text-text-secondary font-code">login.js (secure)</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-3 rounded-full bg-cyber-gray-700"></div>
+                                <div class="w-3 h-3 rounded-full bg-success"></div>
+                                <div class="w-3 h-3 rounded-full bg-success"></div>
+                            </div>
+                        </div>
+                        <div class="font-code text-sm space-y-1">
+                            <div class="text-text-secondary">// Secure login implementation</div>
+                            <div class="text-warning">async function</div> <div class="text-accent">login</div><div class="text-text-primary">(username, password) {</div>
+                            <div class="ml-4 text-success">// Input validation</div>
+                            <div class="ml-4 text-text-primary">if (!validateInput(username, password))</div>
+                            <div class="ml-8 text-text-primary">throw new Error('Invalid input');</div>
+                            <div class="ml-4 text-success">// Parameterized query</div>
+                            <div class="ml-4 text-text-primary">const user = await db.query(</div>
+                            <div class="ml-8 text-text-primary">'SELECT * FROM users WHERE username = ?',</div>
+                            <div class="ml-8 text-text-primary">[username]</div>
+                            <div class="ml-4 text-text-primary">);</div>
+                            <div class="ml-4 text-success">// Secure password verification</div>
+                            <div class="ml-4 text-text-primary">return bcrypt.compare(password, user.hash);</div>
+                            <div class="text-text-primary">}</div>
+                        </div>
+                    </div>
+                    <div class="bg-success/10 border border-success/20 rounded-lg p-4">
+                        <h4 class="font-semibold text-success mb-2">🛡️ Security Improvements:</h4>
+                        <ul class="text-sm text-text-secondary space-y-1">
+                            <li>• Parameterized queries prevent SQL injection</li>
+                            <li>• Bcrypt for secure password hashing</li>
+                            <li>• Input validation and sanitization</li>
+                            <li>• Error handling and logging</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration & Learning -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Kolaborasi & Peer Learning</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">
+                    Proyek kolaboratif dengan sesama mahasiswa yang menunjukkan kemampuan teamwork dan peer learning
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Collaboration 1 -->
+                <div class="cyber-card p-6">
+                    <div class="flex items-start space-x-4 mb-4">
+                        <div class="flex -space-x-2">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Collaborator 1" class="w-8 h-8 rounded-full border-2 border-background object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="AbyyCipherX" class="w-8 h-8 rounded-full border-2 border-background object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        </div>
+                        <div>
+                            <h3 class="font-semibold">Cybersecurity Awareness Website</h3>
+                            <p class="text-sm text-text-secondary">Kolaborasi dengan Sarah Putri (UI/UX)</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-text-secondary mb-4">
+                        Website edukasi cybersecurity untuk mahasiswa dengan interactive quizzes dan case studies. 
+                        Saya handle backend security dan Sarah mendesain user experience.
+                    </p>
+                    
+                    <div class="space-y-3">
+                        <div>
+                            <h4 class="text-sm font-semibold text-accent mb-1">My Contributions:</h4>
+                            <ul class="text-sm text-text-secondary space-y-1">
+                                <li>• Secure authentication system</li>
+                                <li>• Quiz scoring algorithm</li>
+                                <li>• Content management backend</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-sm font-semibold text-success mb-1">Learning Outcomes:</h4>
+                            <p class="text-sm text-text-secondary">
+                                Belajar Git collaboration workflow, code review process, 
+                                dan komunikasi teknis dalam tim.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-3 mt-4">
+                        <a href="javascript:void(0)" class="flex-1 cyber-button-primary text-center text-sm py-2">
+                            View Project
+                        </a>
+                        <a href="javascript:void(0)" class="px-3 py-2 border border-accent text-accent hover:bg-accent hover:text-primary transition-cyber-fast rounded">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Collaboration 2 -->
+                <div class="cyber-card p-6">
+                    <div class="flex items-start space-x-4 mb-4">
+                        <div class="flex -space-x-2">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="AbyyCipherX" class="w-8 h-8 rounded-full border-2 border-background object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <img src="https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg" alt="Collaborator 2" class="w-8 h-8 rounded-full border-2 border-background object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </div>
+                        <div>
+                            <h3 class="font-semibold">Campus Security Audit Tool</h3>
+                            <p class="text-sm text-text-secondary">Kolaborasi dengan Andi Rahman (DevOps)</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-text-secondary mb-4">
+                        Tool untuk audit keamanan infrastruktur IT kampus. Automated scanning untuk common vulnerabilities 
+                        dengan reporting dashboard untuk IT admin.
+                    </p>
+                    
+                    <div class="space-y-3">
+                        <div>
+                            <h4 class="text-sm font-semibold text-accent mb-1">My Contributions:</h4>
+                            <ul class="text-sm text-text-secondary space-y-1">
+                                <li>• Vulnerability detection algorithms</li>
+                                <li>• Security scoring system</li>
+                                <li>• Report generation module</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-sm font-semibold text-success mb-1">Learning Outcomes:</h4>
+                            <p class="text-sm text-text-secondary">
+                                Memahami enterprise security requirements, automated testing, 
+                                dan deployment dalam production environment.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-3 mt-4">
+                        <a href="javascript:void(0)" class="flex-1 cyber-button-primary text-center text-sm py-2">
+                            View Project
+                        </a>
+                        <a href="javascript:void(0)" class="px-3 py-2 border border-accent text-accent hover:bg-accent hover:text-primary transition-cyber-fast rounded">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Statistics -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-surface/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Portfolio Statistics</h2>
+                <p class="text-text-secondary">Ringkasan pencapaian dan dampak dari proyek-proyek yang telah dikerjakan</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Total Projects -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-accent mb-2">12</div>
+                    <p class="text-text-secondary">Total Proyek</p>
+                </div>
+
+                <!-- Security Focused -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-success/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-success mb-2">8</div>
+                    <p class="text-text-secondary">Security-Focused</p>
+                </div>
+
+                <!-- GitHub Stars -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-warning/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-warning mb-2">156</div>
+                    <p class="text-text-secondary">GitHub Stars</p>
+                </div>
+
+                <!-- Code Reviews -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-accent mb-2">45</div>
+                    <p class="text-text-secondary">Peer Reviews</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="cyber-card p-8">
+                <h2 class="text-3xl font-bold mb-4">Tertarik Berkolaborasi?</h2>
+                <p class="text-text-secondary mb-6 max-w-2xl mx-auto">
+                    Saya selalu terbuka untuk kolaborasi proyek, peer learning, atau diskusi tentang cybersecurity. 
+                    Mari membangun sesuatu yang aman dan bermanfaat bersama!
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="javascript:void(0)" class="cyber-button-primary">
+                        Hubungi Saya
+                    </a>
+                    <a href="learning_journey_blog.html" class="px-6 py-3 border-2 border-accent text-accent hover:bg-accent hover:text-primary transition-cyber-fast rounded-lg font-semibold">
+                        Baca Blog Saya
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 sm:px-6 lg:px-8 bg-surface border-t border-cyber-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <svg class="w-8 h-8 text-accent mr-3" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-13-5z"/>
+                            <path d="M14 16l-2-2-1.41 1.41L14 18.83l6-6L18.59 11.41 14 16z" fill="#000"/>
+                        </svg>
+                        <span class="text-xl font-bold text-gradient-cyber">AbyyCipherX</span>
+                    </div>
+                    <p class="text-text-secondary">Building secure web solutions for tomorrow's digital world.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold mb-4">Quick Links</h3>
+                    <div class="space-y-2">
+                        <a href="programming_skills.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Keahlian</a>
+                        <a href="project_portfolio.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Proyek</a>
+                        <a href="learning_journey_blog.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Blog</a>
+                        <a href="resource_center.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Resources</a>
+                    </div>
+                </div>
+
+                <!-- Security -->
+                <div>
+                    <h3 class="font-semibold mb-4">Cybersecurity</h3>
+                    <div class="space-y-2">
+                        <a href="cyber_awareness_hub.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Cyber Awareness</a>
+                        <a href="cyber_awareness_hub.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Security Tips</a>
+                        <a href="cyber_awareness_hub.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Case Studies</a>
+                        <a href="resource_center.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Security Tools</a>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="font-semibold mb-4">Connect</h3>
+                    <div class="space-y-2">
+                        <a href="mailto:contact@abyycipherx.dev" class="block text-text-secondary hover:text-accent transition-cyber-fast">Email</a>
+                        <a href="javascript:void(0)" class="block text-text-secondary hover:text-accent transition-cyber-fast">LinkedIn</a>
+                        <a href="javascript:void(0)" class="block text-text-secondary hover:text-accent transition-cyber-fast">GitHub</a>
+                        <a href="javascript:void(0)" class="block text-text-secondary hover:text-accent transition-cyber-fast">Twitter</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-cyber-gray-800 mt-8 pt-8 text-center">
+                <p class="text-text-secondary">© 2025 AbyyCipherX. All Rights Reserved. Built with security in mind.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const sunIcon = document.getElementById('sunIcon');
+        const moonIcon = document.getElementById('moonIcon');
+        const body = document.body;
+
+        // Check for saved theme preference or default to dark
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        
+        if (currentTheme === 'light') {
+            body.classList.add('light');
+            sunIcon.classList.remove('hidden');
+            moonIcon.classList.add('hidden');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light');
+            
+            if (body.classList.contains('light')) {
+                localStorage.setItem('theme', 'light');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+            } else {
+                localStorage.setItem('theme', 'dark');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter Functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        // Filter button styles
+        const filterBtnStyles = {
+            active: 'bg-accent text-primary border-accent',
+            inactive: 'bg-surface text-text-secondary border-cyber-gray-700 hover:border-accent hover:text-accent'
+        };
+
+        // Initialize filter buttons
+        filterButtons.forEach(btn => {
+            if (!btn.classList.contains('active')) {
+                btn.className = `filter-btn px-4 py-2 rounded-lg border-2 transition-cyber-fast font-medium flex items-center ${filterBtnStyles.inactive}`;
+            } else {
+                btn.className = `filter-btn active px-4 py-2 rounded-lg border-2 transition-cyber-fast font-medium flex items-center ${filterBtnStyles.active}`;
+            }
+        });
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                
+                // Update active button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.className = `filter-btn px-4 py-2 rounded-lg border-2 transition-cyber-fast font-medium flex items-center ${filterBtnStyles.inactive}`;
+                });
+                
+                button.classList.add('active');
+                button.className = `filter-btn active px-4 py-2 rounded-lg border-2 transition-cyber-fast font-medium flex items-center ${filterBtnStyles.active}`;
+                
+                // Filter projects
+                projectCards.forEach(card => {
+                    const categories = card.getAttribute('data-category').split(' ');
+                    
+                    if (filter === 'all' || categories.includes(filter)) {
+                        card.style.display = 'block';
+                        card.classList.add('animate-fade-in');
+                    } else {
+                        card.style.display = 'none';
+                        card.classList.remove('animate-fade-in');
+                    }
+                });
+            });
+        });
+
+        // Toggle project details
+        function toggleDetails(button) {
+            const card = button.closest('.project-card');
+            const details = card.querySelector('.project-details');
+            const icon = button.querySelector('svg');
+            
+            if (details.classList.contains('hidden')) {
+                details.classList.remove('hidden');
+                details.classList.add('animate-slide-down');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                details.classList.add('hidden');
+                details.classList.remove('animate-slide-down');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-cyber');
+            } else {
+                header.classList.remove('shadow-cyber');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-slide-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe project cards
+        projectCards.forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
