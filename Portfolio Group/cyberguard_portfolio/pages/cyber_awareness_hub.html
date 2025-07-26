@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Awareness Hub - AbyyCipherX | Edukasi Keamanan Digital Indonesia</title>
+    <meta name="description" content="Hub edukasi cybersecurity terlengkap untuk generasi muda Indonesia. Pelajari ancaman digital terkini, tips keamanan, dan cara melindungi diri dari cybercrime." />
+    <meta name="keywords" content="cybersecurity, keamanan digital, cybercrime Indonesia, edukasi keamanan, tips keamanan online, scam detection" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fcyberguard9386back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="font-inter bg-background text-text-primary transition-all duration-300">
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-cyber border-b border-surface">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="w-8 h-8 text-accent mr-3" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-13-5z"/>
+                        <path d="M14 16l-2-2-1.41 1.41L14 18.83l6-6L18.59 11.41 14 16z" fill="#000"/>
+                    </svg>
+                    <span class="text-xl font-bold text-gradient-cyber">AbyyCipherX</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-accent transition-cyber-fast">Beranda</a>
+                    <a href="programming_skills.html" class="text-text-secondary hover:text-accent transition-cyber-fast">Keahlian</a>
+                    <a href="cyber_awareness_hub.html" class="text-accent font-medium border-b-2 border-accent pb-1">Cyber Awareness</a>
+                    <a href="project_portfolio.html" class="text-text-secondary hover:text-accent transition-cyber-fast">Proyek</a>
+                    <a href="learning_journey_blog.html" class="text-text-secondary hover:text-accent transition-cyber-fast">Blog</a>
+                    <a href="resource_center.html" class="text-text-secondary hover:text-accent transition-cyber-fast">Sumber Daya</a>
+                </div>
+
+                <!-- Theme Toggle & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <button id="themeToggle" class="p-2 rounded-lg bg-surface hover:bg-cyber-gray-700 transition-cyber-fast" aria-label="Toggle theme">
+                        <svg id="sunIcon" class="w-5 h-5 text-accent hidden" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                        </svg>
+                        <svg id="moonIcon" class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                        </svg>
+                    </button>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg bg-surface hover:bg-cyber-gray-700 transition-cyber-fast">
+                        <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobileMenu" class="md:hidden hidden bg-surface rounded-lg mt-2 p-4 space-y-3">
+                <a href="homepage.html" class="block text-text-secondary hover:text-accent transition-cyber-fast py-2">Beranda</a>
+                <a href="programming_skills.html" class="block text-text-secondary hover:text-accent transition-cyber-fast py-2">Keahlian</a>
+                <a href="cyber_awareness_hub.html" class="block text-accent font-medium py-2">Cyber Awareness</a>
+                <a href="project_portfolio.html" class="block text-text-secondary hover:text-accent transition-cyber-fast py-2">Proyek</a>
+                <a href="learning_journey_blog.html" class="block text-text-secondary hover:text-accent transition-cyber-fast py-2">Blog</a>
+                <a href="resource_center.html" class="block text-text-secondary hover:text-accent transition-cyber-fast py-2">Sumber Daya</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="space-y-8">
+                <div class="space-y-4">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+                        <span class="text-gradient-cyber">Cyber Awareness Hub</span><br />
+                        <span class="text-text-primary">Lindungi Diri dari</span><br />
+                        <span class="text-error">Ancaman Digital</span>
+                    </h1>
+                    <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                        Pusat edukasi keamanan digital terlengkap untuk generasi muda Indonesia. 
+                        Pelajari ancaman cybercrime terkini dan cara melindungi diri di era digital.
+                    </p>
+                </div>
+
+                <!-- Alert Banner -->
+                <div class="bg-error/10 border-2 border-error/30 rounded-lg p-6 max-w-4xl mx-auto">
+                    <div class="flex items-center justify-center space-x-3 mb-3">
+                        <svg class="w-8 h-8 text-error" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                        </svg>
+                        <h2 class="text-2xl font-bold text-error">Peringatan Keamanan Digital!</h2>
+                    </div>
+                    <p class="text-text-secondary text-center">
+                        Setiap 39 detik terjadi serangan cyber di dunia. Indonesia mengalami peningkatan 
+                        <span class="text-error font-semibold">230% cybercrime</span> dalam 2 tahun terakhir.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Indonesian Cybercrime Statistics -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-surface/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Statistik Cybercrime Indonesia 2024</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">
+                    Data terkini yang menunjukkan urgensi kesadaran keamanan digital di Indonesia
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Statistic 1 -->
+                <div class="cyber-card p-6 text-center">
+                    <div class="w-16 h-16 bg-error/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-error" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-bold text-error mb-2">18,493</h3>
+                    <p class="text-text-secondary">Laporan cybercrime di Indonesia (Jan-Nov 2024)</p>
+                </div>
+
+                <!-- Statistic 2 -->
+                <div class="cyber-card p-6 text-center">
+                    <div class="w-16 h-16 bg-warning/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-bold text-warning mb-2">Rp 8.3T</h3>
+                    <p class="text-text-secondary">Kerugian ekonomi akibat cybercrime per tahun</p>
+                </div>
+
+                <!-- Statistic 3 -->
+                <div class="cyber-card p-6 text-center">
+                    <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-bold text-accent mb-2">+230%</h3>
+                    <p class="text-text-secondary">Peningkatan kasus dalam 2 tahun terakhir</p>
+                </div>
+
+                <!-- Statistic 4 -->
+                <div class="cyber-card p-6 text-center">
+                    <div class="w-16 h-16 bg-success/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-bold text-success mb-2">85%</h3>
+                    <p class="text-text-secondary">Dapat dicegah dengan edukasi yang tepat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Threat of the Month -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Ancaman Bulan Ini</h2>
+                <p class="text-text-secondary">Juli 2025 - Waspada Serangan Terbaru</p>
+            </div>
+
+            <div class="cyber-card p-8 max-w-4xl mx-auto">
+                <div class="flex items-start space-x-6">
+                    <div class="w-20 h-20 bg-error/20 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-10 h-10 text-error" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-error mb-3">AI-Generated Phishing Emails</h3>
+                        <p class="text-text-secondary mb-4">
+                            Penjahat cyber kini menggunakan AI untuk membuat email phishing yang sangat meyakinkan, 
+                            meniru gaya penulisan dan format email resmi dari bank, e-commerce, dan institusi pemerintah.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                                <p class="text-text-secondary">Email terlihat sangat profesional dengan logo dan format yang tepat</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                                <p class="text-text-secondary">Menggunakan informasi personal yang diperoleh dari data breach</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                                <p class="text-text-secondary">Link mengarah ke website palsu yang identik dengan aslinya</p>
+                            </div>
+                        </div>
+                        <div class="mt-6 p-4 bg-success/10 border border-success/30 rounded-lg">
+                            <h4 class="font-semibold text-success mb-2">Cara Melindungi Diri:</h4>
+                            <ul class="text-sm text-text-secondary space-y-1">
+                                <li>• Selalu verifikasi email melalui saluran resmi</li>
+                                <li>• Periksa URL dengan teliti sebelum memasukkan data</li>
+                                <li>• Aktifkan 2FA di semua akun penting</li>
+                                <li>• Jangan klik link langsung dari email</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Case Studies -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-surface/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Studi Kasus Interaktif</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">
+                    Pelajari dari kasus nyata cybercrime dan pahami bagaimana serangan terjadi serta cara pencegahannya
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Case Study 1 -->
+                <div class="cyber-card p-6">
+                    <div class="aspect-video bg-surface overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Social Engineering Attack Case" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Kasus: Social Engineering di Media Sosial</h3>
+                    <p class="text-text-secondary mb-4">
+                        Seorang mahasiswa kehilangan Rp 15 juta setelah tertipu oleh penipu yang menyamar sebagai 
+                        customer service bank melalui Instagram.
+                    </p>
+                    <div class="space-y-3 mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-error/20 rounded-full flex items-center justify-center">
+                                <span class="text-xs font-bold text-error">1</span>
+                            </div>
+                            <p class="text-sm text-text-secondary">Penipu menghubungi via DM dengan logo bank palsu</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-error/20 rounded-full flex items-center justify-center">
+                                <span class="text-xs font-bold text-error">2</span>
+                            </div>
+                            <p class="text-sm text-text-secondary">Mengklaim ada transaksi mencurigakan di rekening</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-error/20 rounded-full flex items-center justify-center">
+                                <span class="text-xs font-bold text-error">3</span>
+                            </div>
+                            <p class="text-sm text-text-secondary">Meminta OTP dan PIN untuk "verifikasi keamanan"</p>
+                        </div>
+                    </div>
+                    <button class="cyber-button-primary w-full" onclick="showCaseStudyDetails('case1')">
+                        Analisis Lengkap
+                    </button>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="cyber-card p-6">
+                    <div class="aspect-video bg-surface overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.pixabay.com/photo/2020/04/08/08/37/coronavirus-5016369_1280.png" alt="Online Shopping Scam Case" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Kasus: Penipuan Online Shop Palsu</h3>
+                    <p class="text-text-secondary mb-4">
+                        Ratusan pembeli tertipu oleh toko online palsu yang menjual gadget dengan harga sangat murah 
+                        namun tidak pernah mengirim barang.
+                    </p>
+                    <div class="space-y-3 mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-warning/20 rounded-full flex items-center justify-center">
+                                <span class="text-xs font-bold text-warning">1</span>
+                            </div>
+                            <p class="text-sm text-text-secondary">Website profesional dengan harga terlalu murah</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-warning/20 rounded-full flex items-center justify-center">
+                                <span class="text-xs font-bold text-warning">2</span>
+                            </div>
+                            <p class="text-sm text-text-secondary">Review palsu dan testimoni yang dibuat-buat</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-warning/20 rounded-full flex items-center justify-center">
+                                <span class="text-xs font-bold text-warning">3</span>
+                            </div>
+                            <p class="text-sm text-text-secondary">Hanya menerima transfer tanpa sistem pembayaran aman</p>
+                        </div>
+                    </div>
+                    <button class="cyber-button-primary w-full" onclick="showCaseStudyDetails('case2')">
+                        Analisis Lengkap
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Hygiene Checklist -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Digital Hygiene Checklist</h2>
+                <p class="text-text-secondary">
+                    Praktik keamanan digital yang harus diterapkan setiap hari
+                </p>
+            </div>
+
+            <div class="cyber-card p-8">
+                <div class="space-y-6">
+                    <!-- Password Security -->
+                    <div class="border-b border-cyber-gray-800 pb-6">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center">
+                            <svg class="w-6 h-6 text-accent mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                            </svg>
+                            Keamanan Password
+                        </h3>
+                        <div class="space-y-3">
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-accent bg-surface border-cyber-gray-600 rounded focus:ring-accent focus:ring-2" />
+                                <span class="text-text-secondary">Gunakan password unik untuk setiap akun</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-accent bg-surface border-cyber-gray-600 rounded focus:ring-accent focus:ring-2" />
+                                <span class="text-text-secondary">Password minimal 12 karakter dengan kombinasi huruf, angka, dan simbol</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-accent bg-surface border-cyber-gray-600 rounded focus:ring-accent focus:ring-2" />
+                                <span class="text-text-secondary">Gunakan password manager untuk menyimpan password</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-accent bg-surface border-cyber-gray-600 rounded focus:ring-accent focus:ring-2" />
+                                <span class="text-text-secondary">Aktifkan 2FA di semua akun penting</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Security -->
+                    <div class="border-b border-cyber-gray-800 pb-6">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center">
+                            <svg class="w-6 h-6 text-accent mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                            Keamanan Media Sosial
+                        </h3>
+                        <div class="space-y-3">
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-accent bg-surface border-cyber-gray-600 rounded focus:ring-accent focus:ring-2" />
+                                <span class="text-text-secondary">Atur privasi akun media sosial</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-accent bg-surface border-cyber-gray-600 rounded focus:ring-accent focus:ring-2" />
+                                <span class="text-text-secondary">Jangan share informasi personal sensitif</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-accent bg-surface border-cyber-gray-600 rounded focus:ring-accent focus:ring-2" />
+                                <span class="text-text-secondary">Verifikasi identitas sebelum menerima permintaan pertemanan</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-accent bg-surface border-cyber-gray-600 rounded focus:ring-accent focus:ring-2" />
+                                <span class="text-text-secondary">Hati-hati dengan link yang dibagikan di media sosial</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Device Security -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 flex items-center">
+                            <svg class="w-6 h-6 text-accent mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                            </svg>
+                            Keamanan Perangkat
+                        </h3>
+                        <div class="space-y-3">
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-accent bg-surface border-cyber-gray-600 rounded focus:ring-accent focus:ring-2" />
+                                <span class="text-text-secondary">Update sistem operasi dan aplikasi secara rutin</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-accent bg-surface border-cyber-gray-600 rounded focus:ring-accent focus:ring-2" />
+                                <span class="text-text-secondary">Install antivirus dan firewall yang terpercaya</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-accent bg-surface border-cyber-gray-600 rounded focus:ring-accent focus:ring-2" />
+                                <span class="text-text-secondary">Backup data penting secara berkala</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 text-accent bg-surface border-cyber-gray-600 rounded focus:ring-accent focus:ring-2" />
+                                <span class="text-text-secondary">Gunakan screen lock dan enkripsi pada perangkat</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress Indicator -->
+                <div class="mt-8 p-4 bg-accent/10 border border-accent/30 rounded-lg">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-accent font-semibold">Progress Keamanan Digital Anda</span>
+                        <span id="progressText" class="text-accent font-bold">0%</span>
+                    </div>
+                    <div class="w-full bg-cyber-gray-800 rounded-full h-3">
+                        <div id="progressBar" class="bg-accent h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scam Spotter Quiz -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-surface/50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Scam Spotter Quiz</h2>
+                <p class="text-text-secondary">
+                    Uji kemampuan Anda dalam mendeteksi penipuan online
+                </p>
+            </div>
+
+            <div class="cyber-card p-8">
+                <div id="quizContainer">
+                    <!-- Quiz Question 1 -->
+                    <div class="quiz-question active" id="question1">
+                        <h3 class="text-xl font-semibold mb-4">Pertanyaan 1 dari 3</h3>
+                        <div class="mb-6">
+                            <p class="text-text-secondary mb-4">
+                                Anda menerima email dari "bank" yang meminta Anda mengklik link untuk memverifikasi akun. 
+                                Email tersebut terlihat profesional dengan logo bank yang benar. Apa yang harus Anda lakukan?
+                            </p>
+                        </div>
+                        <div class="space-y-3">
+                            <button class="quiz-option w-full text-left p-4 border border-cyber-gray-600 rounded-lg hover:border-accent transition-cyber-fast" data-answer="wrong">
+                                Langsung klik link karena email terlihat resmi
+                            </button>
+                            <button class="quiz-option w-full text-left p-4 border border-cyber-gray-600 rounded-lg hover:border-accent transition-cyber-fast" data-answer="correct">
+                                Hubungi bank langsung melalui nomor resmi untuk verifikasi
+                            </button>
+                            <button class="quiz-option w-full text-left p-4 border border-cyber-gray-600 rounded-lg hover:border-accent transition-cyber-fast" data-answer="wrong">
+                                Forward email ke teman untuk meminta pendapat
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Quiz Question 2 -->
+                    <div class="quiz-question hidden" id="question2">
+                        <h3 class="text-xl font-semibold mb-4">Pertanyaan 2 dari 3</h3>
+                        <div class="mb-6">
+                            <p class="text-text-secondary mb-4">
+                                Anda menemukan toko online yang menjual iPhone terbaru dengan harga 50% lebih murah dari harga pasar. 
+                                Website terlihat profesional dan ada banyak review positif. Apa yang mencurigakan?
+                            </p>
+                        </div>
+                        <div class="space-y-3">
+                            <button class="quiz-option w-full text-left p-4 border border-cyber-gray-600 rounded-lg hover:border-accent transition-cyber-fast" data-answer="wrong">
+                                Tidak ada yang mencurigakan, ini adalah promo bagus
+                            </button>
+                            <button class="quiz-option w-full text-left p-4 border border-cyber-gray-600 rounded-lg hover:border-accent transition-cyber-fast" data-answer="correct">
+                                Harga terlalu murah dan review bisa jadi palsu
+                            </button>
+                            <button class="quiz-option w-full text-left p-4 border border-cyber-gray-600 rounded-lg hover:border-accent transition-cyber-fast" data-answer="wrong">
+                                Website profesional menjamin keaslian produk
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Quiz Question 3 -->
+                    <div class="quiz-question hidden" id="question3">
+                        <h3 class="text-xl font-semibold mb-4">Pertanyaan 3 dari 3</h3>
+                        <div class="mb-6">
+                            <p class="text-text-secondary mb-4">
+                                Seseorang menghubungi Anda via WhatsApp mengaku dari customer service e-wallet, 
+                                meminta OTP karena ada "masalah keamanan" di akun Anda. Apa respons yang tepat?
+                            </p>
+                        </div>
+                        <div class="space-y-3">
+                            <button class="quiz-option w-full text-left p-4 border border-cyber-gray-600 rounded-lg hover:border-accent transition-cyber-fast" data-answer="wrong">
+                                Berikan OTP karena ini untuk keamanan akun
+                            </button>
+                            <button class="quiz-option w-full text-left p-4 border border-cyber-gray-600 rounded-lg hover:border-accent transition-cyber-fast" data-answer="wrong">
+                                Minta mereka mengirim email resmi terlebih dahulu
+                            </button>
+                            <button class="quiz-option w-full text-left p-4 border border-cyber-gray-600 rounded-lg hover:border-accent transition-cyber-fast" data-answer="correct">
+                                Jangan berikan OTP dan hubungi customer service resmi
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Quiz Results -->
+                    <div class="quiz-results hidden" id="quizResults">
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-success/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-10 h-10 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4">Quiz Selesai!</h3>
+                            <p class="text-text-secondary mb-4">Skor Anda: <span id="finalScore" class="text-accent font-bold">0/3</span></p>
+                            <div id="scoreMessage" class="mb-6"></div>
+                            <button class="cyber-button-primary" onclick="restartQuiz()">Ulangi Quiz</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Library -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Perpustakaan Sumber Daya</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">
+                    Download panduan keamanan digital gratis untuk melindungi diri dan keluarga
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Resource 1 -->
+                <div class="cyber-card p-6">
+                    <div class="w-16 h-16 bg-accent/20 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Panduan Password Aman</h3>
+                    <p class="text-text-secondary mb-4">
+                        Cara membuat dan mengelola password yang kuat untuk semua akun online Anda.
+                    </p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm text-text-secondary">PDF • 2.3 MB</span>
+                        <span class="text-sm text-success">1,247 downloads</span>
+                    </div>
+                    <a href="resource_center.html" class="cyber-button-primary w-full text-center">
+                        Download Gratis
+                    </a>
+                </div>
+
+                <!-- Resource 2 -->
+                <div class="cyber-card p-6">
+                    <div class="w-16 h-16 bg-success/20 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Privasi Media Sosial</h3>
+                    <p class="text-text-secondary mb-4">
+                        Pengaturan privasi lengkap untuk Facebook, Instagram, Twitter, dan TikTok.
+                    </p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm text-text-secondary">PDF • 1.8 MB</span>
+                        <span class="text-sm text-success">892 downloads</span>
+                    </div>
+                    <a href="resource_center.html" class="cyber-button-primary w-full text-center">
+                        Download Gratis
+                    </a>
+                </div>
+
+                <!-- Resource 3 -->
+                <div class="cyber-card p-6">
+                    <div class="w-16 h-16 bg-warning/20 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Belanja Online Aman</h3>
+                    <p class="text-text-secondary mb-4">
+                        Tips menghindari penipuan saat berbelanja online dan memilih marketplace terpercaya.
+                    </p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm text-text-secondary">PDF • 2.1 MB</span>
+                        <span class="text-sm text-success">1,456 downloads</span>
+                    </div>
+                    <a href="resource_center.html" class="cyber-button-primary w-full text-center">
+                        Download Gratis
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="resource_center.html" class="px-6 py-3 border-2 border-accent text-accent hover:bg-accent hover:text-primary transition-cyber-fast rounded-lg font-semibold">
+                    Lihat Semua Resource
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-surface/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Komunitas Cyber Awareness</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">
+                    Bergabunglah dengan komunitas yang peduli keamanan digital dan saling berbagi pengalaman
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Community Stats -->
+                <div class="cyber-card p-8">
+                    <h3 class="text-2xl font-semibold mb-6">Statistik Komunitas</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-3 h-3 bg-accent rounded-full"></div>
+                                <span class="text-text-secondary">Anggota Aktif</span>
+                            </div>
+                            <span class="text-2xl font-bold text-accent">1,247</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-3 h-3 bg-success rounded-full"></div>
+                                <span class="text-text-secondary">Diskusi Bulanan</span>
+                            </div>
+                            <span class="text-2xl font-bold text-success">89</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-3 h-3 bg-warning rounded-full"></div>
+                                <span class="text-text-secondary">Kasus Terselesaikan</span>
+                            </div>
+                            <span class="text-2xl font-bold text-warning">156</span>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="learning_journey_blog.html" class="cyber-button-primary w-full text-center">
+                            Bergabung Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Recent Discussions -->
+                <div class="cyber-card p-8">
+                    <h3 class="text-2xl font-semibold mb-6">Diskusi Terbaru</h3>
+                    <div class="space-y-4">
+                        <div class="border-b border-cyber-gray-800 pb-4">
+                            <h4 class="font-semibold mb-2">Cara Mendeteksi Email Phishing Terbaru</h4>
+                            <p class="text-sm text-text-secondary mb-2">
+                                Diskusi tentang teknik phishing yang semakin canggih dan cara mengidentifikasinya.
+                            </p>
+                            <div class="flex items-center space-x-4 text-xs text-text-secondary">
+                                <span>12 balasan</span>
+                                <span>2 jam lalu</span>
+                            </div>
+                        </div>
+                        <div class="border-b border-cyber-gray-800 pb-4">
+                            <h4 class="font-semibold mb-2">Pengalaman Kena Scam Online Shop</h4>
+                            <p class="text-sm text-text-secondary mb-2">
+                                Sharing pengalaman dan tips untuk menghindari penipuan saat berbelanja online.
+                            </p>
+                            <div class="flex items-center space-x-4 text-xs text-text-secondary">
+                                <span>8 balasan</span>
+                                <span>5 jam lalu</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-2">Rekomendasi Password Manager</h4>
+                            <p class="text-sm text-text-secondary mb-2">
+                                Diskusi tentang password manager terbaik untuk keamanan akun online.
+                            </p>
+                            <div class="flex items-center space-x-4 text-xs text-text-secondary">
+                                <span>15 balasan</span>
+                                <span>1 hari lalu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 sm:px-6 lg:px-8 bg-surface border-t border-cyber-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <svg class="w-8 h-8 text-accent mr-3" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-13-5z"/>
+                            <path d="M14 16l-2-2-1.41 1.41L14 18.83l6-6L18.59 11.41 14 16z" fill="#000"/>
+                        </svg>
+                        <span class="text-xl font-bold text-gradient-cyber">AbyyCipherX</span>
+                    </div>
+                    <p class="text-text-secondary">Building secure web solutions for tomorrow's digital world.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold mb-4">Quick Links</h3>
+                    <div class="space-y-2">
+                        <a href="programming_skills.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Keahlian</a>
+                        <a href="project_portfolio.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Proyek</a>
+                        <a href="learning_journey_blog.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Blog</a>
+                        <a href="resource_center.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Resources</a>
+                    </div>
+                </div>
+
+                <!-- Security -->
+                <div>
+                    <h3 class="font-semibold mb-4">Cybersecurity</h3>
+                    <div class="space-y-2">
+                        <a href="cyber_awareness_hub.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Cyber Awareness</a>
+                        <a href="cyber_awareness_hub.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Security Tips</a>
+                        <a href="cyber_awareness_hub.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Case Studies</a>
+                        <a href="resource_center.html" class="block text-text-secondary hover:text-accent transition-cyber-fast">Security Tools</a>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="font-semibold mb-4">Connect</h3>
+                    <div class="space-y-2">
+                        <a href="mailto:contact@abyycipherx.dev" class="block text-text-secondary hover:text-accent transition-cyber-fast">Email</a>
+                        <a href="javascript:void(0)" class="block text-text-secondary hover:text-accent transition-cyber-fast">LinkedIn</a>
+                        <a href="javascript:void(0)" class="block text-text-secondary hover:text-accent transition-cyber-fast">GitHub</a>
+                        <a href="javascript:void(0)" class="block text-text-secondary hover:text-accent transition-cyber-fast">Twitter</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-cyber-gray-800 mt-8 pt-8 text-center">
+                <p class="text-text-secondary">© 2025 AbyyCipherX. All Rights Reserved. Built with security in mind.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const sunIcon = document.getElementById('sunIcon');
+        const moonIcon = document.getElementById('moonIcon');
+        const body = document.body;
+
+        // Check for saved theme preference or default to dark
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        
+        if (currentTheme === 'light') {
+            body.classList.add('light');
+            sunIcon.classList.remove('hidden');
+            moonIcon.classList.add('hidden');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light');
+            
+            if (body.classList.contains('light')) {
+                localStorage.setItem('theme', 'light');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+            } else {
+                localStorage.setItem('theme', 'dark');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Digital Hygiene Checklist Progress
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const progressBar = document.getElementById('progressBar');
+        const progressText = document.getElementById('progressText');
+
+        function updateProgress() {
+            const checkedCount = document.querySelectorAll('input[type="checkbox"]:checked').length;
+            const totalCount = checkboxes.length;
+            const percentage = Math.round((checkedCount / totalCount) * 100);
+            
+            progressBar.style.width = percentage + '%';
+            progressText.textContent = percentage + '%';
+        }
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updateProgress);
+        });
+
+        // Quiz Functionality
+        let currentQuestion = 1;
+        let score = 0;
+        const totalQuestions = 3;
+
+        function showCaseStudyDetails(caseId) {
+            // This would typically open a modal or navigate to detailed case study
+            alert('Fitur analisis lengkap akan segera hadir! Tetap pantau update dari AbyyCipherX.');
+        }
+
+        // Quiz option selection
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('quiz-option')) {
+                const question = e.target.closest('.quiz-question');
+                const options = question.querySelectorAll('.quiz-option');
+                
+                // Remove previous selections
+                options.forEach(option => {
+                    option.classList.remove('border-accent', 'border-error', 'bg-accent/10', 'bg-error/10');
+                    option.classList.add('border-cyber-gray-600');
+                });
+                
+                // Highlight selected option
+                if (e.target.dataset.answer === 'correct') {
+                    e.target.classList.remove('border-cyber-gray-600');
+                    e.target.classList.add('border-accent', 'bg-accent/10');
+                    score++;
+                } else {
+                    e.target.classList.remove('border-cyber-gray-600');
+                    e.target.classList.add('border-error', 'bg-error/10');
+                }
+                
+                // Show next question after delay
+                setTimeout(() => {
+                    if (currentQuestion < totalQuestions) {
+                        document.getElementById(`question${currentQuestion}`).classList.add('hidden');
+                        currentQuestion++;
+                        document.getElementById(`question${currentQuestion}`).classList.remove('hidden');
+                    } else {
+                        // Show results
+                        document.getElementById(`question${currentQuestion}`).classList.add('hidden');
+                        showQuizResults();
+                    }
+                }, 1500);
+            }
+        });
+
+        function showQuizResults() {
+            const resultsDiv = document.getElementById('quizResults');
+            const scoreSpan = document.getElementById('finalScore');
+            const messageDiv = document.getElementById('scoreMessage');
+            
+            scoreSpan.textContent = `${score}/${totalQuestions}`;
+            
+            let message = '';
+            if (score === 3) {
+                message = '<p class="text-success">Excellent! Anda memiliki kesadaran keamanan digital yang sangat baik.</p>';
+            } else if (score === 2) {
+                message = '<p class="text-warning">Good! Anda cukup waspada, tapi masih ada ruang untuk improvement.</p>';
+            } else {
+                message = '<p class="text-error">Perlu belajar lebih banyak! Jangan khawatir, kami siap membantu Anda.</p>';
+            }
+            
+            messageDiv.innerHTML = message;
+            resultsDiv.classList.remove('hidden');
+        }
+
+        function restartQuiz() {
+            currentQuestion = 1;
+            score = 0;
+            
+            // Reset all questions
+            document.querySelectorAll('.quiz-question').forEach(q => q.classList.add('hidden'));
+            document.getElementById('question1').classList.remove('hidden');
+            document.getElementById('quizResults').classList.add('hidden');
+            
+            // Reset all options
+            document.querySelectorAll('.quiz-option').forEach(option => {
+                option.classList.remove('border-accent', 'border-error', 'bg-accent/10', 'bg-error/10');
+                option.classList.add('border-cyber-gray-600');
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-cyber');
+            } else {
+                header.classList.remove('shadow-cyber');
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
